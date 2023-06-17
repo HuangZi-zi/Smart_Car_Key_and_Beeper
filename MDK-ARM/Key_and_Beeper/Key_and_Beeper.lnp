@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"key_and_beeper\startup_stm32f103xe.o"
+"key_and_beeper\main.o"
+"key_and_beeper\gpio.o"
+"key_and_beeper\tim.o"
+"key_and_beeper\stm32f1xx_it.o"
+"key_and_beeper\stm32f1xx_hal_msp.o"
+"key_and_beeper\motor.o"
+"key_and_beeper\key.o"
+"key_and_beeper\beeper.o"
+"key_and_beeper\stm32f1xx_hal_gpio_ex.o"
+"key_and_beeper\stm32f1xx_hal_tim.o"
+"key_and_beeper\stm32f1xx_hal_tim_ex.o"
+"key_and_beeper\stm32f1xx_hal.o"
+"key_and_beeper\stm32f1xx_hal_rcc.o"
+"key_and_beeper\stm32f1xx_hal_rcc_ex.o"
+"key_and_beeper\stm32f1xx_hal_gpio.o"
+"key_and_beeper\stm32f1xx_hal_dma.o"
+"key_and_beeper\stm32f1xx_hal_cortex.o"
+"key_and_beeper\stm32f1xx_hal_pwr.o"
+"key_and_beeper\stm32f1xx_hal_flash.o"
+"key_and_beeper\stm32f1xx_hal_flash_ex.o"
+"key_and_beeper\stm32f1xx_hal_exti.o"
+"key_and_beeper\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Key_and_Beeper\Key_and_Beeper.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Key_and_Beeper.map" -o Key_and_Beeper\Key_and_Beeper.axf
