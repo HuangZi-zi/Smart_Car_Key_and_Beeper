@@ -8,7 +8,10 @@
 void keyscan(void)
 {
 	//没有按下, 空循环等待
-	while (KEY==GPIO_PIN_RESET);
+	while (KEY==GPIO_PIN_RESET)
+	{
+	KEY;
+	}
 	
   while (KEY==GPIO_PIN_SET)
 	{

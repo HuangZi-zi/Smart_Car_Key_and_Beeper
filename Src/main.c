@@ -102,8 +102,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+		brake(50);
 		keyscan();
-		back(20,10000);
+		back(30,10000);
   }
   /* USER CODE END 3 */
 }
